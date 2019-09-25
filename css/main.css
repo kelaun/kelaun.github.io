@@ -1,0 +1,32 @@
+body {
+  background-color: #1A3551;
+  color: #D1B8E0;
+  font-size: 0.8vw;
+  font-family: monospace;
+}
+.command {
+  margin-right: 10%;
+  margin-left: 10%;
+  background-color: #232323;
+  box-shadow: 5px 5px 10px #232323;
+}
+h1 {
+  font-size: 1vw;
+  color: #A8B1D3;
+}
+a {
+  color: #D1B8E0;
+  text-decoration: none;
+}
+a:visited {
+  color: #C449B7;
+}
+header {
+  border-bottom: 2px dotted #4F4169;
+}
+table {
+  width: 100%;
+}
+th {
+  text-align: left;
+}
