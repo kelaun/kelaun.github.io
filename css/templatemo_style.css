@@ -745,3 +745,4 @@ and (max-width : 559px)	{
 .content { display: none; height: auto; }
 .homepage	{ display: block; }
 .leftalign	{ float: left; }
+.col-md-9 { text-align:right; }
