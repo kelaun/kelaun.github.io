@@ -10,8 +10,8 @@ html, body {
 	font-family: Tahoma, Arial; 
 	padding: 0px; 
 	margin: 0px; 
-	color: #e7e7e7;
-	background: #393e42;
+	color: #D1B8E0;
+	background: #1A3551;
 	font-size: 12px;
 }
 
@@ -24,7 +24,7 @@ html, body {
 }
 
 a {
-	color: #b69e40; outline: 0;
+	color: #D1B8E0; outline: 0;
 }
 
 a:hover {
@@ -32,7 +32,7 @@ a:hover {
 }
 
 a:active, a:focus {
-	color: #b69e40;
+	color: #C449B7;
 	border: none;
 	text-decoration: none;
 }
@@ -40,7 +40,7 @@ a:active, a:focus {
 button:focus { border: none; outline:none; }
 
 p {
-	color: #aeb5ba;
+	color: #D1B8E0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -49,13 +49,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1	{	font-size: 1.5em;
-	color: #ffffff;
-	background: #343537;
+	color: #A8B1D3;
+	background: #1A3551;
 	padding: 10px 8px;
 	float: left;
 	}
 	
-h2	{ font-size: 24px; color: #ffffff; }
+h2	{ font-size: 24px; color: #A8B1D3; }
 h3 {  text-align: center; font-size: 16px; }
 /*img {
   	max-width: 100%;
@@ -91,11 +91,11 @@ span.fa	{ width: 100%; text-align: center; }
   display: inline-block;
   color: white;
   font-size: 16px;
-  background: #343536;
+  background: #1A3551;
   text-transform: uppercase;
 }
 .site-header .main-navigation ul li a.active {
-  color: #b69e40;
+  color: #D1B8E0;
   text-decoration: none;
 }
 .site-header .templatemo_logo {
@@ -114,17 +114,17 @@ a.menu-toggle-btn {
 
 .responsive-menu {
   display: none;
-  background: #343536;
+  background: #D1B8E0;
 }
 
 .responsive_menu {
   display: none;
-  background-color: #2a2a2a;
+  background-color: #D1B8E0;
 }
 .responsive_menu ul li {
   display: block !important;
   margin: 0 !important;
-  border-bottom: 1px solid #444444;
+  border-bottom: 1px solid #232323;
 }
 .responsive_menu ul li a {
   padding: 15px 0 !important;
@@ -217,7 +217,7 @@ a.menu-toggle-btn {
 .smallhexagon {
 	width: 40px;
 	height: 46px;
-	background: #b69e40;
+	background: #1A3551;
 	position: relative;
 	background: url(../images/templatemo_teamhexa.png) no-repeat;
 	margin-bottom: 10px;
@@ -462,18 +462,19 @@ a.menu-toggle-btn {
 .templatemo_loadmore	{ 
 	margin: 0 auto; 
 	padding: 7px 0px; 
-	background: #b79e41; 
+	background: #232323; 
 	margin-top: 15%; 
 	text-align: center; 
 	font-size: 16px; 
 	width: 200px; 
 	margin-bottom:10%;
+	box-shadow: 5px 5px 10px #232322;
 	}
 
 .templatemo_loadmore button{ 
 	border: none; 
-	background: #b79e41; 
-	color: #ffffff; 
+	background: #232323; 
+	color: #D1B8E0; 
 	text-transform: uppercase;
 	width: 100%;
 	}
@@ -553,7 +554,7 @@ a.menu-toggle-btn {
     height: 388px;
 }
 
-.templatemo_footer { background: #343536; padding: 20px 0px; width: 100%; margin-top: 100px; }
+.templatemo_footer { background: #232323; padding: 20px 0px; width: 100%; margin-top: 100px; }
 .templatemo_footer .hex_footer	{ float: left; margin-right: 5px; height: 40px; }
 
 /* Smartphones (portrait and landscape) ----------- */
