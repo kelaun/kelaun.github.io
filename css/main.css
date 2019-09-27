@@ -6,8 +6,15 @@ html {
   height: 100%
 }
 .command {
-  margin-right: 10%;
-  margin-left: 10%;
+  margin-right: 2%;
+  margin-left: 2%;
+  background-color: rgba(35,35,35,0.6);
+  box-shadow: 5px 5px 10px #232323;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+.maincontainer {
+  padding-bottom: 1%;
   background-color: rgba(35,35,35,0.6);
   box-shadow: 5px 5px 10px #232323;
   backdrop-filter: blur(10px);
