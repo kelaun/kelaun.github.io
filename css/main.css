@@ -53,8 +53,14 @@ th {
   padding-left: 2%;
   padding-right: 2%;
 }
-p,th,td {
+p,th,td,li {
   color: #B1D3A8;
   font-size: 0.8vw;
   font-family: monospace;
+}
+li { 
+  list-style-type: none;
+}
+#lists {
+  visibility: hidden;
 }
