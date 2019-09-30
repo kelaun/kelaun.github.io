@@ -8,28 +8,28 @@ html {
 .command {
   margin-right: 2%;
   margin-left: 2%;
-  background-color: rgba(35,35,35,0.6);
-  box-shadow: 5px 5px 10px #232323;
+  background-color: rgba(56,56,56,0.6);
+  box-shadow: 5px 5px 10px #383838;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
 .maincontainer {
   padding-bottom: 1%;
-  background-color: rgba(35,35,35,0.6);
-  box-shadow: 5px 5px 10px #232323;
+  background-color: rgba(56,56,56,0.6);
+  box-shadow: 5px 5px 10px #383838;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
 h1 {
   font-size: 1vw;
-  color: #A8B1D3;
+  color: #BCBCBC;
   text-align: left;
   font-family: monospace;
 }
 a {
   font-size: 0.8vw;
   font-weight: normal;
-  color: #B1D3A8;
+  color: #D1D1D1;
   text-decoration: none;
   font-family: monospace;
 }
@@ -37,10 +37,10 @@ a:visited {
   color: #D3A8B1;
 }
 header {
-  background-color: rgba(35,35,35,0.6);
+  background-color: rgba(56,56,56,0.6);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  box-shadow: 5px 5px 10px #232323;
+  box-shadow: 5px 5px 10px #383838;
 }
 table {
   width: 100%;
@@ -54,7 +54,7 @@ th {
   padding-right: 2%;
 }
 p,th,td,li {
-  color: #B1D3A8;
+  color: #E5E5E5;
   font-size: 0.8vw;
   font-family: monospace;
 }
