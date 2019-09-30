@@ -12,6 +12,7 @@ html {
   box-shadow: 5px 5px 10px #383838;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+  height: 100%;
 }
 .maincontainer {
   padding-bottom: 1%;
@@ -60,7 +61,4 @@ p,th,td,li {
 }
 li { 
   list-style-type: none;
-}
-#lists {
-  visibility: hidden;
 }
