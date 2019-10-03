@@ -19,20 +19,20 @@ h1:not(.maincontainer) {
   font-size: 1vw;
   color: #bcbcbc;
   text-align: left;
-  font-family: monospace;
+  font-family: "Iosevka Term Web", monospace;
 }
 .maincontainer {
   font-size: 1vw;
   color: #232323;
   text-align: left;
-  font-family: monospace;
+  font-family: "Iosevka Term Web", monospace;
 }
 a {
   font-size: 0.8vw;
   font-weight: normal;
   color: #D1D1D1;
   text-decoration: none;
-  font-family: monospace;
+  font-family: "Iosevka Term Web", monospace;
 }
 a:visited {
   color: #D3A8B1;
@@ -57,7 +57,7 @@ th {
 p,th,td,li {
   color: #E5E5E5;
   font-size: 0.8vw;
-  font-family: monospace;
+  font-family: "Iosevka Term Web", monospace;
 }
 li { 
   list-style-type: none;
