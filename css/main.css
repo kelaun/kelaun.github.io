@@ -1,18 +1,19 @@
 html {
   /*background: url("../images/wallpaper.png") no-repeat center center fixed;*/
   background-color: #fbfbfb;
-  -webkit-background-size: cover;
+  /*-webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: cover;*/
 }
 .command {
   margin-right: 2%;
   margin-left: 2%;
-  background-color: rgba(56,56,56,0.6);
+  /*background-color: rgba(56,56,56,0.6);*/
+  background-color: #383838;
   box-shadow: 5px 5px 10px #383838;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  /*backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);*/
   height: 100%;
 }
 h1:not(.maincontainer) {
@@ -23,7 +24,7 @@ h1:not(.maincontainer) {
 }
 .maincontainer {
   font-size: 1vw;
-  color: #232323;
+  color: #383838;
   text-align: left;
   font-family: "Iosevka Term Web", monospace;
 }
@@ -38,9 +39,10 @@ a:visited {
   color: #D3A8B1;
 }
 header {
-  background-color: rgba(56,56,56,0.6);
+  /*background-color: rgba(56,56,56,0.6);
   backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);*/
+  background-color: #383838;
   box-shadow: 5px 5px 10px #383838;
 }
 table {
