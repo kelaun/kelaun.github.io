@@ -14,9 +14,21 @@
 
     <section class="command">
       <h1>~ > links ecosia.org</h1>
-        <form id="searchForm" action="https://www.ecosia.org/search">
-	    <input id="searchBar" type="search" name="q" data-i18n="searchinput_placeholder" data-i18n-target="placeholder" value="" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" autofocus />
+        <form class="searchForm" action="https://www.ecosia.org/search">
+	    <input class="searchBar" type="search" name="q" autofocus />
         </form>
+    </section>
+    <section class="command">
+      <h1>~ > links google.com</h1>
+      <form class="searchForm" action="https://www.google.com/search">
+        <input class="searchBar" type="search" name="q" />
+      </form>
+    </section>
+    <section class="command">
+      <h1>~ > links duckduckgo.com</h1>
+      <form class="searchForm" action="https://duckduckgo.com">
+        <input class="searchBar" type="search" name="q" />
+      </form>
     </section>
   </body>
 </html>

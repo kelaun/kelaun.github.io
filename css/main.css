@@ -49,7 +49,7 @@ table {
 th {
   text-align: left;
 }
-#searchForm {
+.searchForm {
   padding-bottom: 2%;
   padding-left: 2%;
   padding-right: 2%;
@@ -62,7 +62,7 @@ p,th,td,li {
 li { 
   list-style-type: none;
 }
-#searchBar {
+.searchBar {
   width: 100%;
   border: none;
   background-color: transparent;
