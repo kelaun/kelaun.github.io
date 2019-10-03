@@ -1,5 +1,6 @@
 html {
-  background: url("../images/wallpaper.png") no-repeat center center fixed;
+  /*background: url("../images/wallpaper.png") no-repeat center center fixed;*/
+  background-color: #fbfbfb;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -14,16 +15,15 @@ html {
   -webkit-backdrop-filter: blur(10px);
   height: 100%;
 }
-.maincontainer {
-  padding-bottom: 1%;
-  background-color: rgba(56,56,56,0.6);
-  box-shadow: 5px 5px 10px #383838;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-}
-h1 {
+h1:not(.maincontainer) {
   font-size: 1vw;
-  color: #BCBCBC;
+  color: #bcbcbc;
+  text-align: left;
+  font-family: monospace;
+}
+.maincontainer {
+  font-size: 1vw;
+  color: #232323;
   text-align: left;
   font-family: monospace;
 }
