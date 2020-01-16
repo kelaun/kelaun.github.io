@@ -15,7 +15,7 @@ html {
   /*backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);*/
   height: 100%;
-  padding: 2%;
+  padding-left: 1%;
 }
 h1:not(.maincontainer) {
   font-size: 1vw;
