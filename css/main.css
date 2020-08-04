@@ -146,15 +146,15 @@ nav {
 nav img {
 	float: left;
 	max-height: 10%;
-	width: 10%;
+	max-width: 10%;
 }
 nav a {
 	float: right;
 	color: #e7e7e7;
 	text-align: center;
-	padding: 1vw 1vw;
+	padding: 1% 1%;
 	text-decoration: none;
-	font-size: 2vw;
+	font-size: 200%;
 	font-family: "Iosevka Term Web", monospace;
 }
 nav a:hover {
@@ -169,10 +169,10 @@ nav a:active {
 	padding: 5%;
 }
 .textblock h1 {
-	font-size: 3vw;
+	font-size: 200%;
 	font-family: "Iosevka Term Web", monospace;
 }
 .textblock p {
-	font-size: 2vw;
+	font-size: 150%;
 	font-family: "Iosevka Term Web", monospace;
 }
