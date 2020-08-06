@@ -1,0 +1,5 @@
+/*--------- slider ---------*/
+#slide { position:relative; overflow:hidden; width:50%; margin-right:25%; margin-left: 25%; z-index:2; padding-top:3px; align-content: center; justify-content: center; display: block;}
+.slider { width:100%; height:auto; margin:auto auto; position:relative; z-index:2;}
+.items { display:block;}
+
