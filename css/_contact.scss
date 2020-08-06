@@ -1,0 +1,26 @@
+#contact {
+    display: grid;
+    max-height: 100vh;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 1fr 1fr 4fr 1fr;
+
+    h1 {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        text-align: center;
+        margin-top: 10rem;
+    }
+
+    p {
+        grid-row: 3/4;
+        text-align: center;
+        margin-top: 10rem;
+    }
+
+    .footer {
+        grid-row: 4/5;
+        grid-column: 2/3;
+        text-align: center;
+        margin-top: 10rem;
+    }
+}
