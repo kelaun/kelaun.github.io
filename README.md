@@ -1,11 +1,16 @@
 <div align="center">
-    <h3 align="center">
-    	Source code for kelaun.be website
-    </h3>
+	<h1>Source code for kelaun.be website</h1>
 </div>
 
 <div align="center">
-	
-[![maintained](https://img.shields.io/maintenance/yes/2020?label=maintained&style=flat-square)](https://github.com/kelaun/kelaun.github.io/commits/master) [![contributions](https://img.shields.io/badge/contribution-welcome-brightgreen&?style=flat-square)](https://github.com/kelaun/kelaun.github.io/pulls) [![HitCount](http://hits.dwyl.com/kelaun/kelaun.github.io.svg)](http://hits.dwyl.com/kelaun/kelaun.github.io)
+	<img src="https://img.shields.io/maintenance/yes/2020?label=maintained&style=flat-square"> <img src="https://img.shields.io/badge/contribution-welcome-brightgreen&?style=flat-square">
 
+	<h2>Welcome to the website of Kelaun</h2>
+</div>
+
+<div align="left">
+	<p>
+		This repository contains the code for the personal website of Kelaun.<br>
+	</p>
+	<img src="https://raw.githubusercontent.com/kelaun/screenshots/master/website.png" align="center">
 </div>
