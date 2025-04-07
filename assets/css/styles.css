@@ -124,16 +124,13 @@ img {
 .section__title {
   font-size: var(--h1-font-size);
   color: var(--title-color);
+  text-align: center;
 }
 
 .section__subtitle {
   display: block;
   font-size: var(--small-font-size);
   margin-bottom: var(--mb-3);
-}
-
-.section__title, 
-.section__subtitle {
   text-align: center;
 }
 
@@ -167,8 +164,7 @@ img {
   align-items: center;
 }
 
-.nav__logo,
-.nav__toggle {
+.nav__logo {
   color: var(--title-color);
   font-weight: var(--font-medium);
 }
@@ -184,6 +180,8 @@ img {
 .nav__toggle {
   font-size: 1.1rem;
   cursor: pointer;
+  color: var(--title-color);
+  font-weight: var(--font-medium);
 }
 
 .nav__toggle:hover {
@@ -239,19 +237,9 @@ img {
   color: var(--first-color-alt);
 }
 
-/* show menu */
-.show-menu {
-  bottom: 0;
-}
-
 /* Active link */
 .active-link {
   color: var(--first-color);
-}
-
-/* Change background header */
-.scroll-header {
-  box-shadow: 0 -1px 4px rgba(0,0,0,.15);
 }
 
 /*==================== HOME ====================*/
@@ -280,15 +268,6 @@ img {
   color: var(--first-color-alt);
 }
 
-.home__blob {
-  width: 200px;
-  fill: var(--first-color);
-}
-
-.home__blob-img {
-  width: 170px;
-}
-
 .home__data {
   grid-column: 1/3;
 }
@@ -302,10 +281,6 @@ img {
   color: var(--text-color);
   font-weight: var(--font-medium);
   margin-bottom: var(--mb-0-75);
-}
-
-.home__description {
-  margin-bottom: var(--mb-2);
 }
 
 .home__scroll {
@@ -398,195 +373,7 @@ img {
   margin-bottom: var(--mb-2-5);
 }
 
-.about__info {
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: var(--mb-2-5);
-}
-
-.about__info-title {
-  font-size: var(--h2-font-size);
-  font-weight: var(--font-semi-bold);
-  color: var(--title-color);
-}
-
-.about__info-name {
-  font-size: var(--smaller-font-size);
-}
-
-.about__info-title,
-.about__info-name {
-  display: block;
-  text-align: center;
-}
-
-.about__buttons {
-  display: flex;
-  justify-content: center;
-}
-
-/*==================== SKILLS ====================*/
-.skills__container {
-  row-gap: 0;
-}
-
-.skills__header {
-  display: flex;
-  align-items: center;
-  margin-bottom: var(--mb-2-5);
-  cursor: pointer;
-}
-
-.skills__icon,
-.skills__arrow {
-  font-size: 2rem;
-  color: var(--first-color);
-}
-
-.skills__icon {
-  margin-right: var(--mb-0-75);
-}
-
-.skills__title {
-  font-size: var(--h3-font-size);
-}
-
-.skills__subtitle {
-  font-size: var(--small-font-size);
-  color: var(--text-color-light);
-}
-
-.skills__arrow {
-  margin-left: auto;
-  transition: .4s;
-}
-
-.skills__list {
-  row-gap: 1.5rem;
-  padding-left: 2.7rem;
-}
-
-.skills__titles {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: var(--mb-0-5);
-}
-
-.skills__name {
-  font-size: var(--normal-font-size);
-  font-weight: var(--font-medium);
-}
-
-.skills__bar,
-.skills__percentage {
-  height: 5px;
-  border-radius: .25rem;
-}
-
-.skills__bar {
-  background-color: var(--first-color-lighter);
-}
-
-.skills__percentage {
-  display: block;
-  background-color: var(--first-color);
-}
-
-.skills__puppet {
-  width: 95%;
-}
-
-.skills__bash {
-  width: 90%;
-}
-
-.skills__jira,
-.skills__grafana {
-  width: 85%;
-}
-
-.skills__git,
-.skills__rhel,
-.skills__zabbix {
-  width: 80%;
-}
-
-.skills__foreman,
-.skills__python,
-.skills__ubuntu {
-  width: 70%;
-}
-
-.skills__airflow {
-  width: 65%;
-}
-
-.skills__jenkins,
-.skills__docker,
-.skills__kvm,
-.skills__vmware,
-.skills__golang,
-.skills__kali,
-.skills__ldap,
-.skills__ldap,
-.skills__haproxy,
-.skills__vault,
-.skills__nagios {
-  width: 60%;
-}
-
-.skills__powershell,
-.skills__apache,
-.skills__selinux,
-.skills__firewalld {
-  width: 55%;
-}
-
-.skills__terraform,
-.skills__prometheus {
-  width: 50%;
-}
-
-.skills__cyberark {
-  width: 40%;
-}
-
-.skills__close .skills__list {
-  height: 0;
-  overflow: hidden;
-}
-
-.skills__open .skills__list {
-  height: max-content;
-  margin-bottom: var(--mb-2-5);
-}
-
-.skills__open .skills__arrow {
-  transform: rotate(-180deg);
-}
-
 /*==================== QUALIFICATION ====================*/
-.qualification__tabs {
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: var(--mb-2);
-}
-
-.qualification__button {
-  font-size: var(--h3-font-size);
-  font-weight: var(--font-medium);
-  cursor: pointer;
-}
-
-.qualification__button:hover {
-  color: var(--first-color);
-}
-
-.qualification__icon {
-  font-size: 1.8rem;
-  margin-right: var(--mb-0-25);
-}
-
 .qualification__data {
   display: grid;
   grid-template-columns: 1fr max-content 1fr;
@@ -598,43 +385,12 @@ img {
   font-weight: var(--font-medium);
 }
 
-.qualification__subtitle {
-  display: inline-block;
-  font-size: var(--small-font-size);
-  margin-bottom: var(--mb-1);
-}
-
-.qualification__calendar {
-  font-size: var(--smaller-font-size);
-  color: var(--text-color-light);
-}
-
-.qualification__rounder {
-  display: inline-block;
-  width: 13px;
-  height: 13px;
-  background-color: var(--first-color);
-  border-radius: 50%;
-}
-
-.qualification__line {
-  display: block;
-  width: 1px;
-  height: 100%;
-  background-color: var(--first-color);
-  transform: translate(6px, -7px);
-}
-
 .qualification [data-content] {
   display: none;
 }
 
 .qualification__active[data-content] {
   display: block;
-}
-
-.qualification__button.qualification__active {
-  color: var(--first-color);
 }
 
 /*==================== SERVICES ====================*/
@@ -654,13 +410,6 @@ img {
 
 .services__content:hover {
   box-shadow: 0 4px 8px rgba(0,0,0,.15);
-}
-
-.services__icon {
-  display: block;
-  font-size: 1.5rem;
-  color: var(--first-color);
-  margin-bottom: var(--mb-1);
 }
 
 .services__title {
@@ -725,77 +474,10 @@ img {
   cursor: pointer;
 }
 
-.services__modal-icon {
-  color: var(--first-color);
-  margin-right: var(--mb-0-25);
-}
-
 /* Active Modal */
 .active-modal {
   opacity: 1;
   visibility: visible;
-}
-
-/*==================== PORTFOLIO ====================*/
-.portfolio__container {
-  overflow: initial;
-}
-
-.portfolio__content {
-  padding: 0 1.5rem;
-}
-
-.portfolio__img {
-  max-width: 530px;
-  max-height: 354px;
-  border-radius: .5rem;
-  justify-self: center;
-  grid-column: span 2;
-}
-
-.portfolio__title {
-  font-size: var(--h3-font-size);
-  margin-bottom: var(--mb-0-5);
-}
-
-.portfolio__description {
-  margin-bottom: var(--mb-0-75);
-}
-
-.portfolio__button:hover .button__icon {
-  transform: translateX(.25rem);
-}
-
-.swiper-button-prev::after,
-.swiper-button-next::after {
-  content: '';
-}
-
-.swiper-portfolio-icon {
-  font-size: 2rem;
-  color: var(--first-color);
-}
-
-.swiper-button-prev {
-  left: -.5rem;
-}
-
-.swiper-button-next {
-  right: -.5em;
-}
-
-.swiper-container-horizontal > .swiper-pagination-bullets {
-  bottom: -2.5rem;
-}
-
-.swiper-pagination-bullet-active {
-  background-color: var(--first-color);
-}
-
-.swiper-button-prev,
-.swiper-button-next,
-.swiper-pagination-bullet {
-  outline: none;
 }
 
 /*==================== PROJECT IN MIND ====================*/
@@ -811,14 +493,11 @@ img {
 .project__title {
   font-size: var(--h2-font-size);
   margin-bottom: var(--mb-0-75);
+  color: #fff;
 }
 
 .project__description {
   margin-bottom: var(--mb-1-5);
-}
-
-.project__title,
-.project__description {
   color: #fff;
 }
 
@@ -981,20 +660,8 @@ img {
     padding: 0 .5rem;
   }
 
-  .portfolio__img {
-    max-width: 150px;
-    max-height: 100px;
-  }
-
-  project__img {
+  .project__img {
     width: 200px;
-  }
-}
-
-@media screen and (min-width: 351px) {
-  .portfolio__img {
-    max-width: 260px;
-    max-height: 174px;
   }
 }
 
@@ -1015,15 +682,9 @@ img {
 
   .about__container,
   .skills__container,
-  .portfolio__content,
   .project__container,
   .contact__container {
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  .portfolio__img {
-    max-width: 260px;
-    max-height: 174px;
   }
 
   .qualification__sections {
@@ -1165,15 +826,6 @@ img {
     width: 450px;
   }
 
-  .portfolio__img {
-    max-width: 320px;
-    max-height: 214px;
-  }
-
-  .portfolio__content {
-    align-items: center;
-  }
-
   .project {
     text-align: initial;
   }
@@ -1224,31 +876,6 @@ img {
 
   .services__container {
     grid-template-columns: repeat(3, 238px);
-  }
-
-  .portfolio__content {
-    column-gap: 5rem;
-  }
-
-  .swiper-portfolio-icon {
-    font-size: 3.5rem;
-  }
-
-  .swiper-button-prev {
-    left: -3.5rem;
-  }
-
-  .swiper-button-next {
-    right: -3.5rem;
-  }
-
-  .swiper-container-horizontal > .swiper-pagination-bullets {
-    bottom: -4.5rem;
-  }
-
-  .portfolio__img {
-    max-width: 530px;
-    max-height: 354px;
   }
 
   .contact__form {
