@@ -332,7 +332,7 @@ img {
 }
 
 .home__subtitle--lighter {
-  color: var(--container-color); /* Better contrast for subtitle on dark background */
+  color: var(--first-color-lighter); /* Better contrast for subtitle on dark background */
 }
 
 .home__scroll {
