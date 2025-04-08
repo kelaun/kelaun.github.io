@@ -340,7 +340,7 @@ img {
 }
 
 .home__scroll-button {
-  color: var(--container-color);
+  color: var(--first-color);
   transition: .3s;
 }
 
