@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Website and portfolio of Kelaun Photography.">
+        <meta name="description" content="Professional photography services in Belgium specializing in pet, portrait, corporate, and event photography by Kevin Andriessens.">
 
         <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
         <link rel="canonical" href="https://kelaun.be" />
@@ -14,7 +14,30 @@
         <!--==================== CSS ====================-->
         <link rel="stylesheet" href="assets/css/styles.css" type="text/css">
 
-        <title>Kelaun Photography</title>
+        <title>Kelaun Photography | Professional Photography in Belgium</title>
+
+	<!-- Schema.org markup for local business -->
+    	<script type="application/ld+json">
+    	{
+      		"@context": "https://schema.org",
+      		"@type": "LocalBusiness",
+      		"name": "Kelaun Photography",
+      		"image": "https://kelaun.be/assets/img/logo-head.png",
+      		"address": {
+        		"@type": "PostalAddress",
+        		"streetAddress": "",
+        		"addressLocality": "Grimbergen",
+        		"postalCode": "1850",
+        		"addressCountry": "BE"
+      		},
+      		"telephone": "+32 472 825 848",
+      		"email": "contact@kelaun.be",
+      		"url": "https://kelaun.be",
+      		"priceRange": "€€-€€€",
+      		"openingHours": "Mo-Fr 09:00-18:00",
+      		"serviceType": ["Pet Photography", "Portrait Photography", "Corporate Photography", "Event Photography"]
+	}
+    	</script>
     </head>
     <body>
         <!--==================== HEADER ====================-->
@@ -24,38 +47,38 @@
 		    <img src="assets/img/logo-head.png" alt="Logo of Kelaun Photography" class="nav__logo-image">
                     <img src="assets/img/logo-text.png" alt="Kelaun Photography" class="nav__logo-image">
                 </a>
-                <div class="nav__menu" id="nav-menu">
+                <div class="nav__menu" id="nav-menu" aria-label="Main navigation">
                     <ul class="nav__list grid">
                         <li class="nav__item">
-                            <a href="#home" class="nav__link active-link">
-                                <i class="uil uil-estate nav__icon"></i> Home
+                            <a href="#home" class="nav__link active-link" aria-current="page">
+                                <i class="uil uil-estate nav__icon" aria-hidden="true"></i> Home
                             </a>
                         </li>
                         <li class="nav__item">
                             <a href="#about" class="nav__link">
-                                <i class="uil uil-user nav__icon"></i> About
+                                <i class="uil uil-user nav__icon" aria-hidden="true"></i> About
                             </a>
                         </li>
                         <li class="nav__item">
                             <a href="#services" class="nav__link">
-                                <i class="uil uil-briefcase-alt nav__icon"></i> Services
+                                <i class="uil uil-briefcase-alt nav__icon" aria-hidden="true"></i> Services
                             </a>
                         </li>
                         <li class="nav__item">
                             <a href="#recognitions" class="nav__link">
-                                <i class="uil uil-medal nav__icon"></i> Recognitions
+                                <i class="uil uil-medal nav__icon" aria-hidden="true"></i> Recognitions
                             </a>
                         </li>
                         <li class="nav__item">
                             <a href="#contact" class="nav__link">
-                                <i class="uil uil-message nav__icon nav__icon"></i> Contact us
+                                <i class="uil uil-message nav__icon nav__icon" aria-hidden="true"></i> Contact us
                             </a>
                         </li>
                     </ul>
-                    <i class="uil uil-times nav__close" id="nav-close"></i>
+                    <i class="uil uil-times nav__close" id="nav-close" aria-label="Close menu"></i>
                 </div>
                 <div class="nav__btns">
-                    <div class="nav__toggle" id="nav-toggle">
+                    <div class="nav__toggle" id="nav-toggle" aria-label="Open menu">
                         <i class="uil uil-apps"></i>
                     </div>
                 </div>
@@ -69,29 +92,32 @@
                 <div class="home__container container grid">
                     <div class="home__content grid">
                         <div class="home__social">
-                            <a href="https://www.linkedin.com/company/kelaun" title="Visit us on LinkedIn" target="_blank" class="home__social-icon">
-                                <i class="uil uil-linkedin-alt"></i>
+                            <a href="https://www.linkedin.com/company/kelaun" title="Visit us on LinkedIn" target="_blank" rel="noopener" class="home__social-icon">
+                                <i class="uil uil-linkedin-alt" aria-hidden="true"></i>
+				<span class="sr-only">LinkedIn</span>
                             </a>
-                            <a href="https://instagram.com/kelaun_photo" title="Follow us on Instagram" target="_blank" class="home__social-icon">
-                                <i class="uil uil-instagram"></i>
+                            <a href="https://instagram.com/kelaun_photo" title="Follow us on Instagram" target="_blank" rel="noopener" class="home__social-icon">
+                                <i class="uil uil-instagram" aria-hidden="true"></i>
+			    	<span class="sr-only">Instagram</span>
                             </a>
-                            <a href="https://www.facebook.com/KelaunPhoto" title="Like us on Facebook" target="_blank" class="home__social-icon">
-                                <i class="uil uil-facebook-f"></i>
+                            <a href="https://www.facebook.com/KelaunPhoto" title="Like us on Facebook" target="_blank" rel="noopener" class="home__social-icon">
+                                <i class="uil uil-facebook-f" aria-hidden="true"></i>
+				<span class="sr-only">Facebook</span>
                             </a>
                         </div>
                         <div class="home__data">
                             <h1 class="home__title">Capturing Life's Beautiful Moments</h1>
-                            <h3 class="home__subtitle">From Wagging Tails to Red Carpets</h3>
+                            <h3 class="home__subtitle home__subtitle--lighter">From Wagging Tails to Red Carpets</h3>
                             <a href="#contact" class="button button--flex">
-                                Book a Session <i class="uil uil-message button__icon"></i>
+                                Book a Session <i class="uil uil-message button__icon" aria-hidden="true"></i>
                             </a>
                         </div>
                     </div>
                     <div class="home__scroll">
                         <a href="#about" class="home__scroll-button button--flex">
-                            <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                            <i class="uil uil-mouse-alt home__scroll-mouse" aria-hidden="true"></i>
                             <span class="home__scroll-name">Scroll down</span>
-                            <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                            <i class="uil uil-arrow-down home__scroll-arrow" aria-hidden="true"></i>
                         </a>
                     </div>
                 </div>
@@ -102,9 +128,9 @@
                 <h2 class="section__title">About</h2>
                 <span class="section__subtitle">About Me</span>
                 <div class="about__container container grid">
-                    <img src="assets/img/about.jpg" alt="Picture of the owner of Kelaun Photography" class="about__img">
+                    <img src="assets/img/about.jpg" alt="Kevin Andriessens, owner of Kelaun Photography" class="about__img">
                     <div class="about__data">
-                        <p class="about__description">I'm Kevin Andriessen, a photographer dedicated to finding beauty in authentic moments. </br>
+                        <p class="about__description">I'm Kevin Andriessens, a photographer dedicated to finding beauty in authentic moments. </br>
 With a keen eye for detail and emotion, I specialize in creating compelling visual stories across various photography disciplines. My approach combines technical precision with artistic creativity, ensuring each image captures not just appearances, but feelings and memories.</br></br>
 When I'm not behind the camera, you'll find me exploring new destinations with my fiancée Laura, constantly seeking fresh perspectives and inspiration. My passion for travel enriches my photographic vision, while my love for my two dogs reminds me daily of the joy in capturing spontaneous moments.</br></br>
 What sets my work apart is my commitment to creating a comfortable, collaborative experience for every client. Whether I'm photographing your beloved pet, crafting your professional portrait, or documenting your special event, I bring the same attention to detail and dedication to excellence.</p>
@@ -123,23 +149,23 @@ What sets my work apart is my commitment to creating a comfortable, collaborativ
                             <h3 class="services__title">Pet Photography</h3>
 			    <p>I capture pets in their favorite environments - whether lounging at home, exploring a park, or adventuring outdoors - with or without their humans in the frame. Owners are always present to ensure safety and comfort, letting your pet's true personality and your bond shine through candid, heartfelt imagery.</p>
                         </div>
-                        <span class="button button--flex button--small button--link services__button">
+                        <span class="button button--flex button--small button--link services__button" aria-label="View Pet Photography Examples">
                             View More
-                            <i class="uil uil-arrow-right button__icon"></i>
+                            <i class="uil uil-arrow-right button__icon" aria-hidden="true"></i>
                         </span>
                         <div class="services__modal">
                             <div class="services__modal-content">
                                 <h4 class="services__modal-title">Pet Photography</h4>
-                                <i class="uil uil-times services__modal-close"></i>
+                                <i class="uil uil-times services__modal-close" aria-label="Close modal"></i>
                                 <ul class="services__modal-services grid">
                                     <li class="services__modal-service">
-					<img src="assets/img/portfolio1.JPG" alt="Pet picture 1">
+					<img src="assets/img/portfolio1.JPG" alt="Pet picture 1" loading="lazy">
                                     </li>
                                     <li class="services__modal-service">
-					<img src="assets/img/portfolio2.JPG" alt="Pet picture 2">
+					<img src="assets/img/portfolio2.JPG" alt="Pet picture 2" loading="lazy">
                                     </li>
                                     <li class="services__modal-service">
-					<img src="assets/img/portfolio3.jpg" alt="Pet picture 3">
+					<img src="assets/img/portfolio3.jpg" alt="Pet picture 3" loading="lazy">
                                     </li>
                                 </ul>
                             </div>
@@ -151,20 +177,20 @@ What sets my work apart is my commitment to creating a comfortable, collaborativ
                             <h3 class="services__title">Portrait Photography</h3>
 			    <p>Forget stiff poses and sterile backdrops. Your portrait session is a creative collaboration, shot in locations that reflect who you are. Whether it's a solo portrait with moody natural light or a playful family session in your backyard, I craft images that feel like art, not just photos.</p>
                         </div>
-                        <span class="button button--flex button--small button--link services__button">
+                        <span class="button button--flex button--small button--link services__button" aria-label="View Portrait Photography Examples">
                             View More
-                            <i class="uil uil-arrow-right button__icon"></i>
+                            <i class="uil uil-arrow-right button__icon" aria-hidden="true"></i>
                         </span>
                         <div class="services__modal">
                             <div class="services__modal-content">
                                 <h4 class="services__modal-title">Portrait Photography</h4>
-                                <i class="uil uil-times services__modal-close"></i>
+                                <i class="uil uil-times services__modal-close" aria-label="Close modal"></i>
                                 <ul class="services__modal-services grid">
                                     <li class="services__modal-service">
-					    <img src="assets/img/portfolio8.jpg" alt="Portrait picture 1">
+					    <img src="assets/img/portfolio8.jpg" alt="Portrait picture 1" loading="lazy">
                                     </li>
                                     <li class="services__modal-service">
-					    <img src="assets/img/portfolio9.jpg" alt="Portrait picture 2">
+					    <img src="assets/img/portfolio9.jpg" alt="Portrait picture 2" loading="lazy">
                                     </li>
                                 </ul>
                             </div>
@@ -176,14 +202,14 @@ What sets my work apart is my commitment to creating a comfortable, collaborativ
                             <h3 class="services__title">Corporate Photography</h3>
 			    <p>From teambuilding retreats and conferences to company celebrations, I document corporate events with precision and a storytelling edge. My focus is on capturing the essence of your brand and the energy of your team, delivering images that reflect professionalism and authenticity.</p>
                         </div>
-                        <span class="button button--flex button--small button--link services__button">
+                        <span class="button button--flex button--small button--link services__button" aria-label="View Corporate Photography Examples">
                             View More
-                            <i class="uil uil-arrow-right button__icon"></i>
+                            <i class="uil uil-arrow-right button__icon" aria-hidden="true"></i>
                         </span>
                         <div class="services__modal">
                             <div class="services__modal-content">
                                 <h4 class="services__modal-title">Corporate Photography</h4>
-                                <i class="uil uil-times services__modal-close"></i>
+                                <i class="uil uil-times services__modal-close" aria-label="Close modal"></i>
                                 <ul class="services__modal-services grid">
                                     <li class="services__modal-service">
                                     </li>
@@ -205,14 +231,14 @@ What sets my work apart is my commitment to creating a comfortable, collaborativ
                             <h3 class="services__title">Live Events & Performance Photography</h3>
 			   <p>I specialize in capturing the excitement and exclusivity of concerts, live performances, VIP gatherings, and red carpet events. With a keen eye for detail and passion for high-energy environments, I ensure every moment is documented with artistry and flair.</p>
                         </div>
-                        <span class="button button--flex button--small button--link services__button">
+                        <span class="button button--flex button--small button--link services__button" aria-label="View Event Photography Examples">
                             View More
-                            <i class="uil uil-arrow-right button__icon"></i>
+                            <i class="uil uil-arrow-right button__icon" aria-hidden="true"></i>
                         </span>
                         <div class="services__modal">
                             <div class="services__modal-content">
 				    <h4 class="services__modal-title"> Live Events & Performances Photography</h4>
-                                <i class="uil uil-times services__modal-close"></i>
+                                <i class="uil uil-times services__modal-close" aria-label="Close modal"></i>
                                 <ul class="services__modal-services grid">
                                     <li class="services__modal-service">
                                     </li>
@@ -234,14 +260,14 @@ What sets my work apart is my commitment to creating a comfortable, collaborativ
                             <h3 class="services__title">Destination Photography</h3>
 			    <p>Available for destination events worldwide, I bring my expertise to your special occasions, no matter where they take place. Whether it's a corporate retreat in a tropical paradise or a high-profile event in a bustling city, I capture the essence of your event in stunning detail.</p>
                         </div>
-                        <span class="button button--flex button--small button--link services__button">
+                        <span class="button button--flex button--small button--link services__button" aria-label="View Destination Photography Examples">
                             View More
-                            <i class="uil uil-arrow-right button__icon"></i>
+                            <i class="uil uil-arrow-right button__icon" aria-hidden="true"></i>
                         </span>
                         <div class="services__modal">
                             <div class="services__modal-content">
                                 <h4 class="services__modal-title">Destination Photography</h4>
-                                <i class="uil uil-times services__modal-close"></i>
+                                <i class="uil uil-times services__modal-close" aria-label="Close modal"></i>
                                 <ul class="services__modal-services grid">
                                     <li class="services__modal-service">
                                     </li>
@@ -267,7 +293,7 @@ What sets my work apart is my commitment to creating a comfortable, collaborativ
                 <div class="qualification__container container">
 			<div class="recognition__card">
 				<div class="recognition__image">
-					<img src="assets/img/recognition1.png" alt="Kaiser Gallery">
+					<img src="assets/img/recognition1.png" alt="Kaiser Gallery logo" loading="lazy">
 				</div>
 				<div class="recognition__info">
 					<p class="recognition__title">Exhibited at <strong>Kaiser Gallery in Cleveland, USA</strong> (2023)</p>
@@ -276,7 +302,7 @@ What sets my work apart is my commitment to creating a comfortable, collaborativ
 			</div>
 			<div class="recognition__card">
 				<div class="recognition__image">
-					<img src="assets/img/recognition2.png" alt="Galeria Gora">
+					<img src="assets/img/recognition2.png" alt="Galeria Gora logo" loading="lazy">
 				</div>
 				<div class="recognition__info">
 					<p class="recognition__title">Exhibited at <strong>Galeria Gora in Montreal, Canada</strong> (2023)</p>
@@ -285,7 +311,7 @@ What sets my work apart is my commitment to creating a comfortable, collaborativ
 			</div>
 			<div class="recognition__card">
 				<div class="recognition__image">
-					<img src="assets/img/recognition3.png" alt="Almanaque Fotográfica Gallery">
+					<img src="assets/img/recognition3.png" alt="Almanaque Fotográfica Gallery logo" loading="lazy">
 				</div>
 				<div class="recognition__info">
 					<p class="recognition__title">Exhibited at <strong>Almanaque Fotográfica Gallery in Mexico City, Mexico</strong> (2023)</p>
@@ -302,12 +328,12 @@ What sets my work apart is my commitment to creating a comfortable, collaborativ
                         <div class="project__data">
                             <h2 class="project__title">You have a new project</h2>
                             <p class="project__description">Contact us now to discuss your new project.</p>
-                            <a href="mailto:contact@kelaun.be" target="_blank" class="button button--flex button--white">
+                            <a href="mailto:contact@kelaun.be" target="_blank" rel="noopener" class="button button--flex button--white">
                                 Contact us
-                                <i class="uil uil-message project__icon button__icon"></i>
+                                <i class="uil uil-message project__icon button__icon" aria-hidden="true"></i>
                             </a>
                         </div>
-                        <img src="assets/img/logo-head.png" alt="Kelaun Photography logo" class="project__img">
+                        <img src="assets/img/logo-head.png" alt="Kelaun Photography logo" class="project__img" loading="lazy">
                     </div>
                 </div>
             </section>
@@ -319,17 +345,17 @@ What sets my work apart is my commitment to creating a comfortable, collaborativ
                 <div class="contact__container container grid">
                     <div>
                         <div class="contact__information">
-                            <i class="uil uil-phone contact__icon"></i>
+                            <i class="uil uil-phone contact__icon" aria-hidden="true"></i>
                             <div>
                                 <h3 class="contact__title">Call us</h3>
-                                <span class="contact__subtitle">+32 472 825 848</span>
+                                <a href="tel:+32472825848" class="contact__subtitle">+32 472 825 848</a>
                             </div>
                         </div>
                         <div class="contact__information">
                             <i class="uil uil-envelope contact__icon"></i>
                             <div>
                                 <h3 class="contact__title">Mail us</h3>
-                                <span class="contact__subtitle">contact@kelaun.be</span>
+                                <a href="mailto:contact@kelaun.be" class="contact__subtitle">contact@kelaun.be</a>
                             </div>
                         </div>
                         <div class="contact__information">
@@ -340,29 +366,29 @@ What sets my work apart is my commitment to creating a comfortable, collaborativ
                             </div>
                         </div>
                     </div>
-                    <form action="https://formsubmit.co/info@kelaun.be" method="POST" class="contact__form grid">
+                    <form action="https://formsubmit.co/info@kelaun.be" method="POST" class="contact__form grid" id="contact-form">
                         <div class="contact__inputs grid">
                             <div class="contact__content">
                                 <label for="name" class="contact__label">Name</label>
-                                <input type="text" class="contact__input" name="name" id="name">
+                                <input type="text" class="contact__input" name="name" id="name" required>
                             </div>
                             <div class="contact__content">
                                 <label for="email" class="contact__label">Email</label>
-                                <input type="email" class="contact__input" name="email" id="email">
+                                <input type="email" class="contact__input" name="email" id="email" required>
                             </div>
                         </div>
                         <div class="contact__content">
                             <label for="project" class="contact__label">Project</label>
-                            <input type="text" class="contact__input" name="project" id="project">
+                            <input type="text" class="contact__input" name="project" id="project" required>
                         </div>
                         <div class="contact__content">
                             <label for="message" class="contact__label">Message</label>
-                            <textarea cols="0" rows="7" class="contact__input" name="message" id="message"></textarea>
+                            <textarea cols="0" rows="7" class="contact__input" name="message" id="message" required></textarea>
                         </div>
                         <div>
                             <button class="button button--flex" type="submit">
                                 Send Message
-                                <i class="uil uil-message button__icon"></i>
+                                <i class="uil uil-message button__icon" aria-hidden="true"></i>
                             </button>
                         </div>
                     </form>
@@ -378,8 +404,8 @@ What sets my work apart is my commitment to creating a comfortable, collaborativ
         </footer>
         
         <!--==================== SCROLL TOP ====================-->
-        <a href="#" title="Scroll back to the top" class="scrollup" id="scroll-up">
-            <i class="uil uil-arrow-up scrollup__icon"></i>
+        <a href="#" title="Scroll back to the top" class="scrollup" id="scroll-up" aria-label="Back to top">
+            <i class="uil uil-arrow-up scrollup__icon" aria-hidden="true"></i>
         </a>
 
         <!--==================== MAIN JS ====================-->
