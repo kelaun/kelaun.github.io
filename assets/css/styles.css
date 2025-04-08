@@ -305,7 +305,7 @@ img {
 
 .home__social-icon {
   font-size: 1.25rem;
-  color: var(--container-color);
+  color: var(--first-color);
   transition: 0.3s;
 }
 
@@ -321,7 +321,7 @@ img {
 
 .home__title {
   font-size: var(--big-font-size);
-  color: var(--container-color);
+  color: var(--first-color);
 }
 
 .home__subtitle {
