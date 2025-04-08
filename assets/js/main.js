@@ -32,14 +32,75 @@ const modalViews = document.querySelectorAll('.services__modal'),
 modalBtns.forEach((btn, i) => {
 	btn.addEventListener('click', () => {
 		modalViews[i].classList.add('active-modal');
+		const closeBtn = modalViews[i].querySelector('.services__modal-close');
+		if(closeBtn) {
+			setTimeout(() => closeBtn.focus(), 100);
+		}
+		trapFocus(modalViews[i]);
+	});
+	btn.addEventListener('keydown', (e) => {
+		if(e.key === 'Enter' || e.key === ' ') {
+			e.preventDefault();
+			btn.click();
+		}
 	});
 });
 
 modalClose.forEach(closeBtn => {
 	closeBtn.addEventListener('click', () => {
 		modalViews.forEach(view => view.classList.remove('active-modal'));
+		const buttonIndex = Array.form(modalClose).indexOf(closeBtn);
+		if(buttonIndex >= 0 && modalBtns[buttonIndex]) {
+			modalBtns[buttonIndex].focus();
+		}
+	});
+	closeBtn.addEventListener('keydown', (e) => {
+		if(e.key === 'Enter' || e.key === ' ') {
+			e.preventDefault();
+			closeBtn.click();
+		}
+		if(e.key === 'Escape') {
+			modalViews.forEach(view => view.classList.remove('active-modal'));
+			const buttonIndex = Array.from(modalClose).indexOf(closeBtn);
+			if(buttonIndex >= 0 && modalBtns[buttonIndex]) {
+				modalBtns[buttonIndex].focus();
+			}
+		}
 	});
 });
+
+document.addEventListener('keydown', (e) => {
+	if(e.key === 'Escape') {
+		modalViews.forEach((modal, i) => {
+			if(modal.classList.contains('active-modal')) {
+				modal.classList.remove('active-modal');
+				modalBtns[i]?.focus();
+			}
+		});
+	}
+});
+
+function trapFocus(modal) {
+	const focusableElements = modal.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
+	const firstElement = focusableElements[0];
+	const lastElement = focusableElements[focusableElements.length - 1];
+
+	modal.addEventListener('keydown', function(e) {
+		if(e.key === 'Tab') {
+			if(e.shiftKey) {
+				if(document.activeElement === firstElement) {
+					e.preventDefault();
+					lastElement.focus();
+				}
+			} else {
+				if(document.activeElement === lastElement) {
+					e.preventDefault();
+					firstElement.focus();
+				}
+			}
+		}
+	});
+}
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll('section[id]');
