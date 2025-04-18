@@ -230,3 +230,49 @@ const yearElement = document.getElementById('year');
 if(yearElement) {
     yearElement.innerHTML = new Date().getFullYear();
 }
+
+/*=================== INTERCEPT RELOAD =====================*/
+
+// List of allowed domains for navigation
+const allowedDomains = [
+  'kelaun.be',
+  'facebook.com',
+  'instagram.com',
+  'linkedin.com',
+  'formsubmit.co',
+];
+
+// Helper function to check if a URL is allowed
+function isAllowedNavigation(url) {
+  try {
+    const parsed = new URL(url, window.location.origin); // Handle relative URLs
+    return allowedDomains.includes(parsed.hostname);
+  } catch {
+    return false;
+  }
+}
+
+// Intercept link clicks
+document.addEventListener('click', (event) => {
+  const link = event.target.closest('a');
+  if (link && link.href) {
+    if (!isAllowedNavigation(link.href)) {
+      event.preventDefault();
+      console.warn('Blocked navigation to unallowed domain:', link.href);
+      // Optionally inform the user, e.g., alert('Navigation restricted to trusted sites.');
+    }
+  }
+});
+
+// Intercept programmatic navigation (e.g., window.location.assign)
+['assign', 'replace'].forEach((method) => {
+  const original = window.location[method];
+  window.location[method] = function (url) {
+    if (isAllowedNavigation(url)) {
+      original.call(window.location, url);
+    } else {
+      console.warn(`Blocked ${method} to unallowed domain:`, url);
+      // Optionally redirect to a safe page or show a message
+    }
+  };
+});
