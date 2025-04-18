@@ -236,10 +236,15 @@ if(yearElement) {
 // List of allowed domains for navigation
 const allowedDomains = [
   'kelaun.be',
+  'www.kelaun.be',
+  'www.facebook.com',
   'facebook.com',
   'instagram.com',
+  'www.instagram.com',
+  'www.linkedin.com',
   'linkedin.com',
   'formsubmit.co',
+  'www.formsubmit.co',
 ];
 
 // Helper function to check if a URL is allowed
